@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEN — Ruchkalar olami</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Neon Ink Pen Emblem.png">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo"><span class="logo-icon">P</span>EN<span class="logo-dot">.</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menyuni ochish">☰</button>
+        <nav class="nav" id="nav">
+            <a href="#home">Bosh sahifa</a>
+            <a href="#products">Mahsulotlar</a>
+            <a href="#about">Biz haqimizda</a>
+            <a href="#reviews">Fikrlar</a>
+            <a href="#contact">Aloqa</a>
+        </nav>
+        <a href="#products" class="cart-button">🛍️ Savat <span id="cartCount">0</span></a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="eyebrow"><span class="live-dot"></span> YANGI AVLOD KANSTOVARLARI</div>
+                <h1>Har bir fikrga<br>o‘ziga xos <span class="gradient-text">rang ber!</span></h1>
+                <p class="hero-description">G‘oyalaringizni qog‘ozga tushiring. PENORA bilan har bir yozuv ilhom, uslub
+                    va ijodga aylansin.</p>
+                <div class="hero-actions">
+                    <a href="#products" class="btn btn-primary">Mahsulotlarni ko‘rish ↗</a>
+                    <a href="#about" class="btn btn-secondary">Biz haqimizda</a>
+                </div>
+                <div class="hero-stats">
+                    <div><strong>20+</strong><span>Mahsulot turi</span></div>
+                    <div><strong>100%</strong><span>Ijod uchun</span></div>
+                    <div><strong>♡</strong><span>Sevgi bilan tanlangan</span></div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="glow glow-pink"></div>
+                <div class="glow glow-blue"></div>
+                <div class="hero-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1000&q=85"
+                        alt="Daftar va yozish anjomlari">
+                    <div class="floating-card floating-top"><span class="floating-icon">✦</span>
+                        <div><strong>Creative mode</strong><small>Ilhomni yoq!</small></div>
+                    </div>
+                    <div class="floating-card floating-bottom"><span class="rating-star">★</span>
+                        <div><strong>Sening uslubing</strong><small>Sen uchun tanlangan</small></div>
+                    </div>
+                </div>
+                <div class="hero-orbit">PENORA ✦ CREATE ✦ INSPIRE ✦</div>
+            </div>
+        </section>
+
+        <section class="ticker">
+            <div class="ticker-track">
+                <span>WRITE YOUR STORY ✦</span><span>CREATE EVERY DAY ✦</span><span>COLOR YOUR WORLD ✦</span><span>WRITE
+                    YOUR STORY ✦</span><span>CREATE EVERY DAY ✦</span><span>COLOR YOUR WORLD ✦ <span>  The best pens here.</span></span>
+            </div>
+        </section>
+
+        <section class="section products-section" id="products">
+            <div class="section-heading">
+                <div>
+                    <div class="eyebrow">SEN UCHUN TANLANDI</div>
+                    <h2>Bizning <span class="gradient-text">mahsulotlar</span></h2>
+                    <p>O‘zingga mos ruchkani top va ijodni boshlagin.</p>
+                </div>
+                <div class="search-box"><span>⌕</span><input id="productSearch" type="search"
+                        placeholder="Mahsulot qidirish..." aria-label="Mahsulot qidirish"></div>
+            </div>
+
+            <div class="filter-row" id="filterRow">
+                <button class="filter active" data-filter="all">Barchasi</button>
+                <button class="filter" data-filter="gel">Gel ruchkalar</button>
+                <button class="filter" data-filter="classic">Klassik</button>
+                <button class="filter" data-filter="color">Rangli ruchkalar</button>
+                <button class="filter" data-filter="set">To‘plamlar</button>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <article class="product-card" data-category="gel" data-name="neon gel ruchka pushti">
+                    <div class="product-image pink-bg">
+                        <span class="product-badge">TOP TANLOV</span>
+                        <button class="heart" aria-label="Sevimlilarga qo‘shish" aria-pressed="false">♡</button>
+                        <img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=700&q=85"
+                            alt="Gel ruchka">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">GEL RUCHKA</span>
+                        <h3>Neon Gel</h3>
+                        <p>Yumshoq va ravon yozuv.</p>
+                        <div class="product-bottom"><strong>12 000 so‘m</strong><button class="quick-add"
+                                data-name="Neon Gel" data-price="12000">+ Savatga</button></div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="classic" data-name="classic qora ruchka">
+                    <div class="product-image blue-bg">
+                        <span class="product-badge badge-blue">KLASSIKA</span>
+                        <button class="heart" aria-label="Sevimlilarga qo‘shish" aria-pressed="false">♡</button>
+                        <img src="https://images.unsplash.com/photo-1585336261022-680e295ce3fe?auto=format&fit=crop&w=700&q=85"
+                            alt="Klassik ruchka">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">KLASSIK</span>
+                        <h3>Classic Pro</h3>
+                        <p>Har kun uchun ishonchli tanlov.</p>
+                        <div class="product-bottom"><strong>18 000 so‘m</strong><button class="quick-add"
+                                data-name="Classic Pro" data-price="18000">+ Savatga</button></div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="color" data-name="rainbow rangli ruchkalar">
+                    <div class="product-image purple-bg">
+                        <span class="product-badge badge-purple">YORQIN</span>
+                        <button class="heart" aria-label="Sevimlilarga qo‘shish" aria-pressed="false">♡</button>
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=85"
+                            alt="Rangli ijod anjomlari">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">RANGLI RUCHKALAR</span>
+                        <h3>Rainbow Set</h3>
+                        <p>G‘oyalaring uchun ranglar olami.</p>
+                        <div class="product-bottom"><strong>25 000 so‘m</strong><button class="quick-add"
+                                data-name="Rainbow Set" data-price="25000">+ Savatga</button></div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="set" data-name="creative box sovg‘a to‘plami">
+                    <div class="product-image green-bg">
+                        <span class="product-badge badge-green">SOVG‘A UCHUN</span>
+                        <button class="heart" aria-label="Sevimlilarga qo‘shish" aria-pressed="false">♡</button>
+                        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=700&q=85"
+                            alt="Ijod uchun daftar va ruchka">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">TO‘PLAM</span>
+                        <h3>Creative Box</h3>
+                        <p>Yozish va rejalashtirish uchun.</p>
+                        <div class="product-bottom"><strong>45 000 so‘m</strong><button class="quick-add"
+                                data-name="Creative Box" data-price="45000">+ Savatga</button></div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="gel" data-name="smooth flow gel ruchka">
+                    <div class="product-image orange-bg">
+                        <span class="product-badge badge-orange">YANGI</span>
+                        <button class="heart" aria-label="Sevimlilarga qo‘shish" aria-pressed="false">♡</button>
+                        <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=700&q=85"
+                            alt="Daftar va yozish anjomlari">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">GEL RUCHKA</span>
+                        <h3>Smooth Flow</h3>
+                        <p>Kundalik yozuvlar uchun qulay.</p>
+                        <div class="product-bottom"><strong>15 000 so‘m</strong><button class="quick-add"
+                                data-name="Smooth Flow" data-price="15000">+ Savatga</button></div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="set" data-name="study kit o‘quv to‘plami">
+                    <div class="product-image cyan-bg">
+                        <span class="product-badge badge-blue">FOYDALI</span>
+                        <button class="heart" aria-label="Sevimlilarga qo‘shish" aria-pressed="false">♡</button>
+                        <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=700&q=85"
+                            alt="O‘qish va yozish uchun anjomlar">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">TO‘PLAM</span>
+                        <h3>Study Kit</h3>
+                        <p>Darslar va yangi g‘oyalar uchun.</p>
+                        <div class="product-bottom"><strong>35 000 so‘m</strong><button class="quick-add"
+                                data-name="Study Kit" data-price="35000">+ Savatga</button></div>
+                    </div>
+                </article>
+            </div>
+            <p class="empty-message" id="emptyMessage" hidden>Bu qidiruv bo‘yicha mahsulot topilmadi.</p>
+        </section>
+
+        <section class="about-section section" id="about">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1000&q=85"
+                    alt="Yozish jarayoni">
+                <div class="about-sticker">IDEA<br>INTO<br>REALITY ✦</div>
+            </div>
+            <div class="about-content">
+                <div class="eyebrow">BIZ KIMMIZ?</div>
+                <h2>Oddiy ruchka emas.<br><span class="gradient-text">Bu — sening uslubing.</span></h2>
+                <p>PENORA — yozish jarayonini yanada yoqimli qilish uchun yaratilgan zamonaviy konsepsiya. Biz chiroyli
+                    dizayn, qulaylik va ijodiy kayfiyatni birlashtiramiz.</p>
+                <div class="feature-list">
+                    <div class="feature"><span class="feature-icon">✦</span>
+                        <div>
+                            <h3>O‘ziga xos dizayn</h3>
+                            <p>Ko‘zingga yoqadigan zamonaviy uslub.</p>
+                        </div>
+                    </div>
+                    <div class="feature"><span class="feature-icon">✎</span>
+                        <div>
+                            <h3>Kundalik ilhom</h3>
+                            <p>O‘qish, reja va yangi g‘oyalar uchun.</p>
+                        </div>
+                    </div>
+                    <div class="feature"><span class="feature-icon">♡</span>
+                        <div>
+                            <h3>Senga mos tanlov</h3>
+                            <p>Turli did va ehtiyojlarga mos variantlar.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#products" class="btn btn-primary">Tanlovni boshlash ↗</a>
+            </div>
+        </section>
+
+        <section class="quote-section">
+            <div class="quote-mark">“</div>
+            <p>Katta g‘oyalar ba’zan kichkina bir chiziqdan boshlanadi.</p>
+            <span>— PENORA MOTTO</span>
+        </section>
+
+        <section class="section reviews-section" id="reviews">
+            <div class="section-heading centered">
+                <div class="eyebrow">YAXSHI SO‘ZLAR</div>
+                <h2>Foydalanuvchilar <span class="gradient-text">fikri</span></h2>
+                <p>PENORA haqida fikrlar.</p>
+            </div>
+            <div class="review-grid">
+                <article class="review-card">
+                    <div class="stars">★★★</div>
+                    <p>“Dizayni juda yoqimli. Daftarimni bezashga ham ishlataman!”</p>
+                    <div class="review-person"><span class="avatar avatar-pink"><img class="round-img" src="images (1).jpg" alt=""></span>
+                        <div><strong>Madina</strong><small>O‘quvchi</small></div>
+                    </div>
+                </article>
+                <article class="review-card">
+                    <div class="stars">★★★★</div>
+                    <p>“Sayt sodda, mahsulotlarni topish oson. Ranglari ham zo‘r.”</p>
+                    <div class="review-person"><span class="avatar avatar-blue"><img class="round-img1" src="images (2).jpg" alt=""></span>
+                        <div><strong>Aziz</strong><small>Talaba</small></div>
+                    </div>
+                </article>
+                <article class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>“Ijod uchun kerakli narsalarni bir joyda ko‘rish qulay.”</p>
+                    <div class="review-person"><span class="avatar avatar-purple"><img class="round-img" src="cute-indian-girl-red-saree-with-golden-jewelry_1282444-230844.avif" alt=""></span>
+                        <div><strong>Sabina</strong><small>Ijodkor</small></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <div class="eyebrow">PENORA CLUB</div>
+                <h2>Yangiliklardan <span class="gradient-text">xabardor bo‘l!</span></h2>
+                <p>Yangi mahsulotlar va ijodiy g‘oyalarni birinchi bo‘lib bilib ol.</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <input type="email" placeholder="Email manziling" required aria-label="Email manziling">
+                    <button class="btn btn-primary" type="submit">Obuna bo‘lish ↗</button>
+                </form>
+                <p class="form-message" id="newsletterMessage" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="contact-info">
+                <div class="eyebrow">BIZ BILAN BOG‘LAN</div>
+                <h2>Savoling bormi?<br><span class="gradient-text">Yozib yubor!</span></h2>
+                <p>Mahsulotlar yoki buyurtma haqida savoling bo‘lsa, shakl orqali xabar yozishing mumkin.</p>
+                <div class="contact-detail"><span>✉</span>
+                    <div><strong>Email</strong>
+                        <p>mamadjonovhikmatillo1@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-detail"><span>◎</span>
+                    <div><strong>Ijtimoiy tarmoqlar</strong>
+                        <p>TikTok · Instagram</p>
+                    </div>
+                </div>
+                <div class="contact-detail"><span>🔭</span>
+                    <div><strong>Telefon:</strong>
+                        <p>+998 50 030 54 50</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <label for="contactName">Isming</label>
+                <input id="contactName" type="text" placeholder="Ismingni yoz" required>
+                <label for="contactEmail">Email manziling</label>
+                <input id="contactEmail" type="email" placeholder="email@example.com" required>
+                <label for="contactSubject">Xabar mavzusi</label>
+                <select id="contactSubject">
+                    <option>Mahsulot haqida</option>
+                    <option>Buyurtma haqida</option>
+                    <option>Hamkorlik</option>
+                    <option>Boshqa savol</option>
+                </select>
+                <label for="contactText">Xabaring</label>
+                <textarea id="contactText" rows="4" placeholder="Xabaringni shu yerga yoz..." required></textarea>
+                <button class="btn btn-primary btn-full" type="submit">Xabarni yuborish ↗</button>
+                <p class="form-message" id="contactMessage" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#home" class="logo"><span class="logo-icon">P</span>EN<span class="logo-dot">.</span></a>
+        <p>Har bir fikrga rang ber. Har kuni yangi g‘oya yarat.</p>
+        <div class="footer-links"><a href="#home">Bosh sahifa</a><a href="#products">Mahsulotlar</a><a
+                href="#contact">Aloqa</a></div>
+        <div class="footer-bottom"><span>© <span id="year"></span> PEN. Barcha huquqlar himoyalangan.</span><a
+                href="#home">Yuqoriga ↑</a></div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
